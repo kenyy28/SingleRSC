@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.nemotech.rsc.Constants;
 import org.nemotech.rsc.util.Util;
+import org.nemotech.rsc.model.Item;
 import org.nemotech.rsc.model.Mob;
 import org.nemotech.rsc.model.NPC;
 import org.nemotech.rsc.model.landscape.Path;
@@ -184,6 +185,7 @@ public final class FightEvent extends DelayedEvent {
 
         if (newHp <= 0) {
             onDeath(opponent, attacker);
+            return;
             /*if (opponent instanceof Player) {
                 Player p = (Player) opponent;
             }
@@ -203,41 +205,43 @@ public final class FightEvent extends DelayedEvent {
             owner.informOfModifiedHits(opponent);
         }
     }
+    protected static void onDeath(Mob killed, Mob killer) {
+        if (killer instanceof Player && killed instanceof NPC) {
+            if (PluginManager.getInstance().blockDefaultAction("PlayerKilledNpc", new Object[] { ((Player) killer), ((NPC) killed) })) {
+                return;
+            }
+        }
     
-protected static void onDeath(Mob killed, Mob killer) {
-    // Assuming the following:
-    // - 'killed' represents the character who has died.
-    // - 'killer' represents the character who caused the death.
+        // Assuming you have a Bank class or similar to handle item storage
+        if (killer instanceof Player) {
+            Player player = (Player) killer;
+        
 
-    // Transfer items from the killed character's inventory to their bank
-    if (killed instanceof Player) {
-        Player player = (Player) killed;
-        Bank bank = player.getBank();
-        Inventory inventory = player.getInventory();
-
-         // Create a temporary list of items to be removed
-         List<InvItem> itemsToRemove = new ArrayList<>(inventory.getItems());
-
-         // Transfer all items from the inventory to the bank
-         for (InvItem item : itemsToRemove) {
-             if (player.getLocation().inWilderness()) {
-                inventory.remove(item);
-             } else {
-                bank.add(item);
-                 inventory.remove(item); // Remove the item from the inventory after it's added to the bank
-             }
-    } 
-
-    // Mark the killed character as "killed by" the attacker
-    killed.killedBy(killer);
-
-    // Reset combat states
-    killed.resetCombat(CombatState.LOST);
-    killer.resetCombat(CombatState.WON);
-}
-
-   
+                  // If not in wilderness, transfer items to the bank as usual
+                  Bank bank = player.getBank();
+                  Inventory inventory = player.getInventory();
+      
+                  // Create a temporary list of items to be removed
+                  List<InvItem> itemsToRemove = new ArrayList<>(inventory.getItems());
+      
+                  // Transfer all items from the inventory to the bank
+                  for (InvItem item : itemsToRemove) {
+                      try {
+                          bank.add(item); // Add the item to the bank
+                          inventory.remove(item); // Remove the item from the player's inventory
+                      } catch (Exception e) {
+                          System.err.println("Error transferring item: " + e.getMessage()); // Log any exceptions
+                      }  
+            
+            }
+        }
+    
+        // Optionally, handle other aspects like resetting combat state
+        killed.killedBy(killer);
+        killed.resetCombat(CombatState.LOST);
+        killer.resetCombat(CombatState.WON);
+        //killer.setKillType(0);
+    }
     
 }
 
-}
