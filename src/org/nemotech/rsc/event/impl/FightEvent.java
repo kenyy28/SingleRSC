@@ -212,27 +212,19 @@ public final class FightEvent extends DelayedEvent {
             }
         }
     
-        // Assuming you have a Bank class or similar to handle item storage
-        if (killer instanceof Player) {
-            Player player = (Player) killer;
-        
-
-                  // If not in wilderness, transfer items to the bank as usual
-                  Bank bank = player.getBank();
-                  Inventory inventory = player.getInventory();
-      
-                  // Create a temporary list of items to be removed
-                  List<InvItem> itemsToRemove = new ArrayList<>(inventory.getItems());
-      
-                  // Transfer all items from the inventory to the bank
-                  for (InvItem item : itemsToRemove) {
-                      try {
-                          bank.add(item); // Add the item to the bank
-                          inventory.remove(item); // Remove the item from the player's inventory
-                      } catch (Exception e) {
-                          System.err.println("Error transferring item: " + e.getMessage()); // Log any exceptions
-                      }  
-            
+        // Transfer inventory to bank when a player dies
+        if (killed instanceof Player) {
+            Player player = (Player) killed;
+            Bank bank = player.getBank();
+            Inventory inventory = player.getInventory();
+    
+            // Create a temporary list of items to be removed
+            List<InvItem> itemsToRemove = new ArrayList<>(inventory.getItems());
+    
+            // Transfer all items from the inventory to the bank
+            for (InvItem item : itemsToRemove) {
+                bank.add(item); // Add the item to the bank
+                inventory.remove(item); // Remove the item from the player's inventory
             }
         }
     
