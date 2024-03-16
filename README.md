@@ -16,7 +16,9 @@ Login and play
 - Swap bank items by right clicking on the item
 - You can use multiple accounts, but do not use more than one account during the same session (you can have multiple windows open)
 - Administrator privileges can be acquired by creating a new account with username "root", and also supports right-clicking the mini-map to teleport
+## What Kenyy Changed
 - Ui Fix
+- Make it similar to current runescape where you do not have to sleep
 - Bank all items when you die even in wild
 ## Credits
 sean-niemann
