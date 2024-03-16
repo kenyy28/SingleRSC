@@ -10,7 +10,7 @@ public class Constants {
     
     public static final String VERSION = "2.4 Beta";
     
-    public static int EXPERIENCE_MULTIPLIER = 8;
+    public static int EXPERIENCE_MULTIPLIER = 20 ;
 
     public static final boolean MEMBER_WORLD = true;
     
