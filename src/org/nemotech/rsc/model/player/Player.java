@@ -535,7 +535,7 @@ public final class Player extends Mob {
     /**
      * Amount of fatigue - 0 to 100
      */
-    private int fatigue = 7500, tempFatigue = 7500;
+    private int fatigue = 0, tempFatigue = 0;
     /**
      * Has the player been registered into the world?
      */
@@ -1675,7 +1675,6 @@ public final class Player extends Mob {
             if(fatigue >= 96) {
                 getSender().sendMessage("@gre@You start to feel tired, maybe you should rest soon");
             }
-            fatigue++;
             getSender().sendFatigue(fatigue);
         }
         if(multiplied)
