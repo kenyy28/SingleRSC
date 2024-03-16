@@ -298,32 +298,25 @@ public final class Player extends Mob {
         sleepEvent = new DelayedEvent(this, 600) {
             @Override
             public void run() {
-                if (tempFatigue == 0 || !sleeping) {
+                if (!sleeping) {
                     running = false;
                     return;
                 }
 
-                if (bed) {
-                    owner.tempFatigue -= 2100; // todo
-                } else {
-                    owner.tempFatigue -= 431; // todo
-                }
-
-                if (owner.tempFatigue < 0) {
-                    owner.tempFatigue = 0;
-                }
+              // Set tempFatigue to 0 regardless of whether the player is in a bed or not
+            owner.tempFatigue = 0;
 
                 owner.getSender().sendTempFatigue(owner.tempFatigue / 10); // todo
             }
         };
 
-        tempFatigue = fatigue;
+        tempFatigue = 0;
         getSender().sendFatigue(0);// todo: (tempFatigue / 10);
         World.getWorld().getDelayedEventHandler().add(sleepEvent);
     }
     
     public void handleWakeup() {
-        fatigue = tempFatigue;
+        fatigue = 0;
     }
     
     private boolean sleeping;

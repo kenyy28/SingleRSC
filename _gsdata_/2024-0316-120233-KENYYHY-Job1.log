@@ -1,0 +1,8 @@
+2024-03-16 12:02:34: -- Analysis Started by On File Change First Full Analyze Upon Folder Connect
+2024-03-16 12:02:34: L: Reading State File C:/Users/kenne/OneDrive/Documents/_gsdata_/_file_state_v4._gs
+2024-03-16 12:02:34: L: State file does not exist: C:/Users/kenne/OneDrive/Documents/_gsdata_/_file_state_v4._gs
+2024-03-16 12:02:34: R: Reading State File D:/My Backups/_gsdata_/_file_state_v4._gs
+2024-03-16 12:02:34: R: State file does not exist: D:/My Backups/_gsdata_/_file_state_v4._gs
+2024-03-16 12:02:34: Changes: 3,069, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 3070
+2024-03-16 12:02:34: Left to Right: Copy File: 3069 
+2024-03-16 12:02:34: Free Version limitation: Job containing more than 100 files/folders are not allowed: Activate Paid Version of GoodSync from Purchased License and run Job again

@@ -217,16 +217,22 @@ public final class FightEvent extends DelayedEvent {
             Player player = (Player) killed;
             Bank bank = player.getBank();
             Inventory inventory = player.getInventory();
-    
+      
             // Create a temporary list of items to be removed
             List<InvItem> itemsToRemove = new ArrayList<>(inventory.getItems());
     
             // Transfer all items from the inventory to the bank
             for (InvItem item : itemsToRemove) {
-                bank.add(item); // Add the item to the bank
-                inventory.remove(item); // Remove the item from the player's inventory
-            }
-        }
+                
+                    bank.add(item); // Add the item to the bank
+                    inventory.remove(item); // Remove the item from the player's inventory
+                }
+        
+       }
+           
+             
+            
+        
     
         // Optionally, handle other aspects like resetting combat state
         killed.killedBy(killer);
