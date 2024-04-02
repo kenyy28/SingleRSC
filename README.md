@@ -1,5 +1,5 @@
-## RSC-Single-Player
-RSC Single Player is a standalone single player RSC reproduction and sandbox. The application handles itself entirely and does not rely on a local server nor database. 
+## SingleRSC
+SingleRSC is a standalone single player RSC reproduction and sandbox. The application handles itself entirely and does not rely on a local server nor database. 
 ## Requirements
 Java 8 or newer
 ## Instructions
