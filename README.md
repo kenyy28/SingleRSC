@@ -1,7 +1,7 @@
 
-![akncfgxs](https://github.com/kenyy28/SingleRSC/assets/104810014/86cb4e48-dd27-48aa-875e-d5b9a872b7d4)
 
 
+![akncfgxs](https://github.com/kenyy28/SingleRSC/assets/104810014/6318abd2-a422-4c58-a481-081c2e7791d3)
 
 SingleRSC is a standalone single player RSC reproduction and sandbox. 
 The application handles itself entirely and does not rely on a local 
