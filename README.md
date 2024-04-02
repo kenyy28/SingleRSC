@@ -3,14 +3,10 @@
 
 
 
-SingleRSC is a standalone single player RSC reproduction and sandbox. 
+SingleRSC is a standalone single player RSC reproduction and sandbox. The application handles itself entirely and does 
 
 
-
-The application handles itself entirely and does not rely on a local 
-
-
-server nor database. 
+not rely on a local server nor database. 
 ## Website
 https://www.singlersc.com
 ## Requirements
