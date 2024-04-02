@@ -1,7 +1,7 @@
 ## SingleRSC
 SingleRSC is a standalone single player RSC reproduction and sandbox. The application handles itself entirely and does not rely on a local server nor database. 
 ## Website
-www.singlersc.site
+https://www.singlersc.site
 ## Requirements
 Java 8 or newer
 ## Instructions
@@ -19,7 +19,6 @@ Login and play
 - You can use multiple accounts, but do not use more than one account during the same session (you can have multiple windows open)
 - Administrator privileges can be acquired by creating a new account with username "root", and also supports right-clicking the mini-map to teleport
 - Minimal custom features
-## What Kenyy Changed
 - Ui Fix
 - Make it similar to current runescape where you do not have to sleep
 - Bank all items when you die even in wild
