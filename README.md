@@ -35,6 +35,6 @@ Login and play
 - Bank all items when you die even in wild
 ## Credits
 sean-nieman
-[https://www.github.com/sean-niemann/RSC-Single-Player] (https://www.github.com/sean-niemann/RSC-Single-Player)
+https://www.github.com/sean-niemann/RSC-Single-Player
 ## Liscense
 [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html)
