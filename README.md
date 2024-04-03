@@ -7,9 +7,7 @@ SingleRSC is a standalone single player RSC reproduction and sandbox.
 
 The application handles itself entirely
 
-and does not rely on a local server nor database. 
-## Website
-[https://www.singlersc.com](https://www.singlersc.com)
+and does not rely on a local server nor database.
 ## Requirements
 Java 8 or newer
 ## Instructions
