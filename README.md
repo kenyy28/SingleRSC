@@ -31,6 +31,8 @@ Login and play
 - Ui Fix
 - Make it similar to current runescape where you do not have to sleep
 - Bank all items when you die even in wild
+## Download
+https://github.com/kenyy28/SingleRSC/releases/download/runescape/SingleRSC-main.zip
 ## Credits
 sean-nieman
 https://www.github.com/sean-niemann/RSC-Single-Player
