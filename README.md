@@ -34,7 +34,7 @@ Login and play
 ## Download
 ![Download](https://github.com/kenyy28/SingleRSC/releases/download/runescape/SingleRSC-main.zip)
 ## Credits
-![sean-nieman]
-(https://www.github.com/sean-niemann/RSC-Single-Player)
+Sean Niemann
+https://www.github.com/sean-niemann/RSC-Single-Player
 ## Liscense
 ![https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html)
