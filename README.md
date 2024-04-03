@@ -32,9 +32,9 @@ Login and play
 - Make it similar to current runescape where you do not have to sleep
 - Bank all items when you die even in wild
 ## Download
-https://github.com/kenyy28/SingleRSC/releases/download/runescape/SingleRSC-main.zip
+![Download](https://github.com/kenyy28/SingleRSC/releases/download/runescape/SingleRSC-main.zip)
 ## Credits
-sean-nieman
-https://www.github.com/sean-niemann/RSC-Single-Player
+![sean-nieman]
+(https://www.github.com/sean-niemann/RSC-Single-Player)
 ## Liscense
-[https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html)
+![https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html)
