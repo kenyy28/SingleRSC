@@ -9,7 +9,7 @@ The application handles itself entirely
 
 and does not rely on a local server nor database. 
 ## Website
-https://www.singlersc.com
+[https://www.singlersc.com]
 ## Requirements
 Java 8 or newer
 ## Instructions
