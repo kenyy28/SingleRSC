@@ -9,7 +9,7 @@ The application handles itself entirely
 
 and does not rely on a local server nor database. 
 ## Website
-[https://www.singlersc.com]
+[https://www.singlersc.com](https://www.singlersc.com)
 ## Requirements
 Java 8 or newer
 ## Instructions
@@ -34,7 +34,7 @@ Login and play
 - Make it similar to current runescape where you do not have to sleep
 - Bank all items when you die even in wild
 ## Credits
-sean-niemann
-https://github.com/sean-niemann/RSC-Single-Player
+[sean-nieman]
+(https://github.com/sean-niemann/RSC-Single-Player)
 ## Liscense
-https://www.gnu.org/licenses/gpl-3.0.en.html
+[https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html)
