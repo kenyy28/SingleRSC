@@ -8,6 +8,8 @@ SingleRSC is a standalone single player RSC reproduction and sandbox.
 The application handles itself entirely
 
 and does not rely on a local server nor database.
+## Website
+www.singlersc.com
 ## Requirements
 Java 8 or newer
 ## Instructions
@@ -31,8 +33,6 @@ Login and play
 - Ui Fix
 - Make it similar to current runescape where you do not have to sleep
 - Bank all items when you die even in wild
-## Download
-[Download](https://www.github.com/kenyy28/SingleRSC/releases/download/runescape/SingleRSC-main.zip)
 ## Credits
 Sean Niemann
 https://www.github.com/sean-niemann/RSC-Single-Player
