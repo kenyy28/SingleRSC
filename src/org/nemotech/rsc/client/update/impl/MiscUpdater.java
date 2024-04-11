@@ -26,6 +26,14 @@ public class MiscUpdater extends Updater {
             if(success) {
                 player.handleWakeup();
                 player.getSender().sendMessage("You wake up - feeling refreshed");
+                final boolean heals = player.getCurStat(3) < player.getMaxStat(3);
+                if (heals) {
+                    int newHp = player.getCurStat(3) + player.getMaxStat(3) / 3;
+                    if (newHp > player.getMaxStat(3)) {
+                        newHp =player.getMaxStat(3);
+                    }
+                    player.setCurStat(3, newHp);
+                }
             } else {
                 player.getSender().sendMessage("You are unexpectedly awoken! You still feel tired");
             }
@@ -33,7 +41,6 @@ public class MiscUpdater extends Updater {
         player.setSleeping(false);
         mc.isSleeping = false;
     }
-    
     public void sendAlert(String message, boolean big) {
         mc.showAlert(message, big);
     }
