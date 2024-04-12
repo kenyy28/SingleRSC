@@ -33,7 +33,7 @@ Login and play
 - Ui Fix
 - Make it similar to current runescape where you do not have to sleep
 - Bank all items when you die even in wild
-- On wake up it heals health points
+- On wake up it heals some health points
 ## Credits
 Sean Niemann
 https://www.github.com/sean-niemann/RSC-Single-Player
