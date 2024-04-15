@@ -34,6 +34,7 @@ Login and play
 - Make it similar to current runescape where you do not have to sleep
 - Bank all items when you die even in wild
 - when you sleep it heals you instead of restoring fatigue
+- And lastly you can not get hacked very easily because there is no server
 ## Credits
 Sean Niemann
 https://www.github.com/sean-niemann/RSC-Single-Player
