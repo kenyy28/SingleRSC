@@ -10,8 +10,10 @@ The application handles itself entirely
 and does not rely on a local server nor database.
 ## Website and Blog
 [SingleRSC](https://kenyyhy.com/single-rsc)
+
 ## Requirements
 Java 8 Only
+[Download Here](https://adoptium.net/temurin/releases/?version=8)
 ## Instructions
 To launch double click the 'rsc.jar'
 To create a new account, click the "New User" button and
