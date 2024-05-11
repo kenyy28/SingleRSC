@@ -10,10 +10,63 @@ public class User extends Plugin implements CommandListener {
     @Override
     public void onCommand(String command, String[] args, Player player) {
         if(command.equals("help")) {
-            mudclient.getInstance().showAlert("@yel@Single Player RSC Help % %" + "@whi@Type ::stuck if your character gets stuck. % "
-                + "Type ::pos to list your current location in the world. % Type ::mapedit to bring up the real time map editor", false);
+            mudclient.getInstance().showAlert("@yel@Single Player RSC Help %" + "@whi@Type ::stuck if your character gets stuck. % "
+                + "Type ::pos to list your current location in the world."+"%@whi@Type ::tele(nameofBoss) ie:teleKBD"+"%@whi@Type ::tele(nameofCity) ie: telelumbridge", false);
             return;
         }
+        //CITIES
+        if(command.equals("telelumbridge")) {
+            player.teleport(122, 647, true);
+            player.getSender().sendMessage("You teleport to Lumbridge");
+            return;
+        }
+        if(command.equals("televarrock")) {
+            player.teleport(134, 507, true);
+            player.getSender().sendMessage("You teleport to Varrock");
+            return;
+        }
+        if(command.equals("telefalador")) {
+            player.teleport(315, 542, true);
+            player.getSender().sendMessage("You teleport to Falador");
+            return;
+        }
+        if(command.equals("teleportsarim")) {
+            player.teleport(269, 637, true);
+            player.getSender().sendMessage("You teleport to Port Sarim");
+            return;
+        }
+        if(command.equals("teletaverly")) {
+            player.teleport(364, 500, true);
+            player.getSender().sendMessage("You teleport to Taverly");
+            return;
+        }
+        if(command.equals("telecatherby")) {
+            player.teleport(421, 492, true);
+            player.getSender().sendMessage("You teleport to Catherby");
+            return;
+        }
+        if(command.equals("telecamelot")) {
+            player.teleport(467, 456, true);
+            player.getSender().sendMessage("You teleport to Camelot");
+            return;
+        }
+        if(command.equals("teleseersvillage")) {
+            player.teleport(520, 456, true);
+            player.getSender().sendMessage("You teleport to Seer's Village");
+            return;
+        }
+        if(command.equals("teleardougne")) {
+            player.teleport(548, 590, true);
+            player.getSender().sendMessage("You teleport to Ardougne");
+            return;
+        }
+        if(command.equals("telealkharid")) {
+            player.teleport(73,684, true);
+            player.getSender().sendMessage("You teleport to Al Kharid");
+            return;
+        }
+        //Bosses
+        
         if(command.equals("stuck")) {
             player.teleport(122, 647, true);
             return;
